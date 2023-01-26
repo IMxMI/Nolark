@@ -120,3 +120,4 @@ input[type="email"]:valid ~ .input-validation::before {
         justify-content: center;
     }
 }
+
