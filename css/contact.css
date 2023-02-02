@@ -76,7 +76,7 @@
     margin-right: 10px;
 }
 
-input:valid, :not(input[type="submit"]) {
+input:valid, input:not(input[type="submit"]) {
     color: green;
 }
 input:invalid {
@@ -120,3 +120,4 @@ input[type="email"]:valid ~ .input-validation::before {
         justify-content: center;
     }
 }
+
