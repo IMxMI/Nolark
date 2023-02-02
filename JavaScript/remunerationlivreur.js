@@ -110,7 +110,11 @@ function gestionNbAccidents(nbAccidents, primeAnnuelleSansAccident, primeAnnuell
                 + ' accidents responsables...';
     }
     if (nbAccidents >= 4){
-        elH2.innerHTML = 'Vous ne recevrez pas de prime due au nombre trop élevé d\'accidents. Gardez les yeux sur la route !';
+        // elH2.innerHTML = 'Vous ne recevrez pas de prime due au nombre trop élevé d\'accidents. Gardez les yeux sur la route !';
+        document.body.innerHTML = '<h1>Redirection en cours...</h1> <h2>Nombre d\'Accidents trop importants ! Votre prime est de 0€. Faites attentions à votre conduites pour éviter tous désagrément.</h2>';
+        setTimeout(function() {
+            window.location.href = "https://candidat.pole-emploi.fr/inscription-en-ligne/accueil";
+          }, 4500);
     }
     window.document.querySelector("#btn_annuler").addEventListener("click", function(){
         elH2.innerHTML = '';
