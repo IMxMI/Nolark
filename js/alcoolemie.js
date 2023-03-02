@@ -102,7 +102,8 @@ function getString(id) {
 }
 
 function calculerAlcool(){
-    let alcoolemie = getAlcoolemie(#sexe,#poids,#nbVerres);
+    let 
+    // let alcoolemie = getAlcoolemie(#sexe,#num_poids,#num_verre);
     
 }
 
