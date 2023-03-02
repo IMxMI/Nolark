@@ -1,16 +1,3 @@
-// 0 verre
-if (0 === getAlcooPur(0)) {
- console.log('0 verre : ok');
-} else {
- console.log('0 verre : erreur');
-}
-// 1 verre
-if (10 === getAlcooPur(1)) {
- console.log('1 verre : ok');
-} else {
- console.log('1 verre : erreur');
-}
-
 /**
 * Fonction qui retourne l'alcool pur ingéré en fonction du nombre
 * de verre
@@ -113,3 +100,23 @@ function getInt(id) {
 function getString(id) {
  return window.document.querySelector(id).value;
 }
+
+function calculerAlcool(){
+    let alcoolemie = getAlcoolemie(#sexe,#poids,#nbVerres);
+    
+}
+
+window.addEventListener('load', function () {
+ // tabEvents est une collection d'évenements
+ let tabEvents = ['keyup', 'click'];
+ // tabInputs est une collection de <input>
+ let tabInputs = window.document.querySelectorAll('input[type="number"]');
+ // Parcours de tabInputs en s'appuyant sur le nombre de <input> et sur tabEvents
+ for (let i = 0; i < tabInputs.length; i++) {
+ for (let j = 0; j < tabEvents.length; j++) {
+ // Ajout des listeners sur tous les <input> des events listés dans tabEvents
+ tabInputs[i].addEventListener(tabEvents[j], calculerAlcool);
+ }
+ }
+ calculerAlcool();
+ });

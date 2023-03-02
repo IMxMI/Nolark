@@ -53,6 +53,6 @@ MesTestsUnitaires.prototype.testsGetString = function () {
  // Changement de sexe
  window.document.querySelector('#rd_sexehomme').removeAttribute('checked');
  window.document.querySelector('#rd_sexefemme').setAttribute('checked','checked');
- assertTrue('Test bouton radio Femme',
- 'femme' === getString('#sexe input[type="radio"]:checked'));
+ assertTrue('Test bouton radio Femme','femme' === getString('#sexe input[type="radio"]:checked'));
 };
+
