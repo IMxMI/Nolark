@@ -1,5 +1,4 @@
-function ancienneté (time){
-    const fixe = 1100;
+function ancienneté (time, fixe){
     if (time >= 5){
         if (time >= 10){
             return fixe * 1.06;
@@ -44,3 +43,23 @@ const prixMu = 180.0, nbMultiTranche1 = 20, nbMultiTranche2 = 50;
                 + ((nb_vendu - nbMultiTranche2) * prixMu * txMultiTranche3));
     }
 }
+
+window.addEventListener("load", function () {
+
+    window.document.querySelector("#btn_calculer").addEventListener("click", function () {
+        // Déclaration des constantes
+        const fixe = 1100.0;
+
+        // Déclaration et affectation des variables
+        let nbAncien = parseInt(window.document.querySelector("#num_ancien").value);
+        let nbS20 = parseInt(window.document.querySelector("#num_s20").value);
+        let nbXS = parseInt(window.document.querySelector("#num_xs").value);
+        let nbMulti = parseInt(window.document.querySelector("#num_multi").value);
+        let remuneration = fixe + ancienneté(nbAncien, fixe)
+                + s20(nbS20) + xspirit(nbXS)
+                + multitec(nbMulti);
+        // Affichage du résultat
+        window.document.querySelector("#remuneration").innerHTML =
+                "La rémunération sera de : " + remuneration + " €";
+    });
+});
