@@ -1,7 +1,7 @@
 function ancienneté (time){
     const fixe = 1100;
-    if (time > 5){
-        if (time > 10){
+    if (time >= 5){
+        if (time >= 10){
             return fixe * 1.06;
         }
         else {
