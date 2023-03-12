@@ -12,3 +12,9 @@ function ancienneté (time){
         return fixe
     }
 }
+
+function s20 (nb_vendu){
+    const prix = 140;
+    let ca = prix * nb_vendu;
+    return (ca * 1.02) - ca;
+}
