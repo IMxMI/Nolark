@@ -29,3 +29,18 @@ function xspirit (nb_vendu){
         return 0;
     }
 }
+
+function multitec (nb_vendu){
+const prixMu = 180.0, nbMultiTranche1 = 20, nbMultiTranche2 = 50;
+    const txMultiTranche1 = 0.04, txMultiTranche2 = 0.06, txMultiTranche3 = 0.1;
+    if (nb_vendu <= nbMultiTranche1) {
+        return (nb_vendu * prixMu * txMultiTranche1);
+    } else if (nb_vendu <= nbMultiTranche2) {
+        return ((nbMultiTranche1 * prixMu * txMultiTranche1)
+                + ((nb_vendu - nbMultiTranche1) * prixMu * txMultiTranche2));
+    } else {
+        return ((nbMultiTranche1 * prixMu * txMultiTranche1)
+                + ((nbMultiTranche2 - nbMultiTranche1) * prixMu * txMultiTranche2)
+                + ((nb_vendu - nbMultiTranche2) * prixMu * txMultiTranche3));
+    }
+}
