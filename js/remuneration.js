@@ -18,3 +18,14 @@ function s20 (nb_vendu){
     let ca = prix * nb_vendu;
     return (ca * 1.02) - ca;
 }
+
+function xspirit (nb_vendu){
+    const prix = 350;
+    if (nb_vendu > 50){
+        let ca = prix * (nb_vendu - 50);
+        return (ca * 1.06) - ca;
+    }
+    else {
+        return 0;
+    }
+}
