@@ -9,3 +9,13 @@ window.addEventListener("load", function () {
         tabInputs[i].addEventListener("click", calcRemu);
     }
 });
+
+/**
+ * Fonction qui retourne un entier depuis une valeur prise dans le DOM
+ *
+ * @param {String} id
+ * @return {integer}
+ */
+function recupValeur(id) {
+    return parseInt(window.document.querySelector(id).value);
+}
