@@ -19,3 +19,16 @@ window.addEventListener("load", function () {
 function recupValeur(id) {
     return parseInt(window.document.querySelector(id).value);
 }
+
+function tarif (poids){
+    const poid1 = 4.95, poid2 = 6.70, poid3 = 7.60, poid4 = 8.25, poid5 = 9.55, poid6 = 14.65, poid7 = 21.30, poid8 = 26.95, poid9 = 33.40;
+    if (poids < 250){
+        return poid1;
+    }
+    else if (poids < 500){
+        return poid2;
+    }
+    else if (poids < 750){
+        return poid3;
+    }
+}
