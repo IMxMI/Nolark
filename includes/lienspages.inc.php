@@ -1,7 +1,7 @@
 <?php
 $navpages = array(
     'route.html' => 'Route',
-    'cross.html' => 'Rross',
+    'cross.html' => 'Cross',
     'piste.html' => 'Piste',
     'enfant.html' => 'Enfants',
     'nous-contacter.html' => 'Nous contacter'
