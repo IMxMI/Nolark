@@ -17,7 +17,6 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="favicon.ico">
 </head>
-
 <body>
     <?php
     include_once('includes/header.html.inc.php');
