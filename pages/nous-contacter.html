@@ -16,7 +16,7 @@
         <link href="../css/carto.css" rel="stylesheet" type="text/css">
         <link href="../css/contact.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="../favicon.ico">
-        <script src="../JavaScript/nolark.js" ></script>
+        <script src="../js/nolark.js" type="text/javascript"></script>
     </head>
     <body>
         <header>
@@ -46,19 +46,18 @@
         </header>
         <section id="carto">
             <h1>Nous localiser :</h1>
-            <img src="https://www.mapquestapi.com/staticmap/v5/map?key=9V0qb8M1LFYjpsQiHCBMbCmrDMYljnpAlocations=Toulon,Var,France|http://gil83.fr/nolark/marqueur_nolark.png&center=Châteauroux,Indre,France&zoom=6&size=600,610" alt="Carte OpenStreetMap statique avec le pays de Nolark">
-            <img src="https://www.mapquestapi.com/staticmap/v5/map?key=9V0qb8M1LFYjpsQiHCBMbCmrDMYljnpAlocations=Rond-Point Bir-Hackeim, La Rode, Toulon, Var, Provence-Alpes-Côte d'Azur, France métropolitaine, 83041, France|http://gil83.fr/nolark/marqueur_nolark.png&zoom=13&size=306,300" alt="Carte OpenStreetMap statique avec la ville de Nolark">
-            <img src="https://www.mapquestapi.com/staticmap/v5/map?key=9V0qb8M1LFYjpsQiHCBMbCmrDMYljnpAlocations=43.12115, 5.94037|http://gil83.fr/nolark/marqueur_nolark.png&zoom=18&size=306,300" alt="Carte OpenStreetMap statique avec l'emplacement de Nolark">
+            <img src="https://www.mapquestapi.com/staticmap/v5/map?key=bZNXQieHCY65xphzmzAPLTH1EQSKUDq0&locations=Toulon,Var,France|http://gil83.fr/nolark/marqueur_nolark.png&center=Châteauroux,Indre,France&zoom=6&size=600,610" alt="Carte OpenStreetMap statique avec le pays de Nolark">
+            <img src="https://www.mapquestapi.com/staticmap/v5/map?key=bZNXQieHCY65xphzmzAPLTH1EQSKUDq0&locations=Rond-Point Bir-Hackeim, La Rode, Toulon, Var, Provence-Alpes-Côte d'Azur, France métropolitaine, 83041, France|http://gil83.fr/nolark/marqueur_nolark.png&zoom=13&size=306,300" alt="Carte OpenStreetMap statique avec la ville de Nolark">
+            <img src="https://www.mapquestapi.com/staticmap/v5/map?key=bZNXQieHCY65xphzmzAPLTH1EQSKUDq0&locations=43.12115, 5.94037|http://gil83.fr/nolark/marqueur_nolark.png&zoom=18&size=306,300" alt="Carte OpenStreetMap statique avec l'emplacement de Nolark">
         </section>
         <section id="contact">
             <h1>Nous contacter :</h1>
             <form id="form_contact" name="form_contact" action="http://gil83.fr/nolark/testforms.php" method="POST">
                 <fieldset id="coordo">
                     <legend>Pour mieux vous connaître</legend>
-                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_prenom">Votre prénom :</label> <input type="text" name="i_prenom" id="i_prenom" size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
-                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" size="35" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><div class="input-validation"></div></div>
-                    <div><label for="i_url">Votre url :</label> <input type="url" name="i_url" id="i_url" size="35" pattern="https?://.+[a-z0-9.-]+\.[a-z]{2,}$"></div>
+                    <div><label for="i_nom">Votre nom :</label> <input type="text" name="i_nom" id="i_nom"  pattern="^[a-zA-Záàâä  size="35" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$" required><div class="input-validation"></div></div>
+                    <div><label for="i_email">Votre e-mail :</label> <input type="email" name="i_email" id="i_email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><div class="input-validation"></div></div>
+                    <div><label for="i_url">Votre url :</label> <input type="url" name="i_url" id="i_url" pattern="https?://.+[a-z0-9.-]+\.[a-z]{2,}$"></div>
                     <div>
                         <label for="lst_typeclient">Vous êtes : </label>
                         <select name="lst_typeclient" id="lst_typeclient">
