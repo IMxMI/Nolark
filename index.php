@@ -65,10 +65,9 @@
         <article id="milieu"><a href="pages/cross.html">Cross</a></article>
         <article id="droite"><a href="pages/piste.html">Piste</a></article>
     </section>
-    <footer>
-        <p>&copy;2018 Nolark - Créé par <a href="mailto:jose.gil@ac-nice.fr">José GIL</a>
-        <p>
-    </footer>
+    <?php
+    include_once('includes/footer.html.inc.php');
+    ?>
 </body>
 
 </html>
