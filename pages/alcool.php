@@ -52,10 +52,9 @@
             </p>
         </form>
     </section>
-    <footer>
-        <p>2023 Nolark - Créé par Vernoux Maxime
-        <p>
-    </footer>
+    <?php
+    include_once('../includes/footer.html.inc.php');
+    ?>
 </body>
 
 </html>
