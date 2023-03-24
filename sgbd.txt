@@ -6,3 +6,6 @@ CREATE USER 'nolarkuser'@'localhost' IDENTIFIED VIA mysql_native_password USING 
 
 GRANT SELECT ON `nolark`.* TO 'nolarkuser'@'localhost';
 // ajout de privilèges.
+
+CREATE TABLE `nolark`.`marque` (`id` INT(3) NOT NULL , `nom` TEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
+// creation de la table marque avec clé primaire ID[int] et attribut nom[string].
