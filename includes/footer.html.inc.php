@@ -1,11 +1,8 @@
 <footer>
-    <p>&copy;
-        <?php date_default_timezone_set('Europe/Paris');
-        echo date("Y"); ?> Nolark - Créé par <a
-            href="mailto:mxm.vernoux@gmail.com">Maxime Vernoux</a>
-    </p>
-    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNous somme le :
-    <?php date_default_timezone_set('Europe/Paris');
-        echo date('d-m-Y  à  H:i'); ?>
-    </p>
+    <p>&copy;2023 Nolark - Créé par <a
+            href="mailto:mxm.vernoux@gmail.com">Maxime Vernoux</a> - Page chargée le <?php
+        setlocale(LC_ALL, 'fr-FR.utf8', 'fra');
+        date_default_timezone_set('Europe/Paris');
+        echo strftime("%A %d %B");
+        ?> à <?php echo strftime("%Hh%M"); ?><p>
 </footer>
