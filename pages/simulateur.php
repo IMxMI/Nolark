@@ -57,13 +57,9 @@
       </p>
     </form>
   </section>
-  <footer>
-    <p>
-      &copy;2018 Nolark - Créé par
-      <a href="mailto:jose.gil@ac-nice.fr">José GIL</a>
-    </p>
-    <p></p>
-  </footer>
+  <?php
+  include_once('../includes/footer.html.inc.php');
+  ?>
 </body>
 
 </html>

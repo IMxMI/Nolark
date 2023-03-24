@@ -99,10 +99,9 @@
             <img class="classement classement00" src="../images/casques/etoiles.gif" alt="Classement 0 sur 5">
         </article>
     </section>
-    <footer>
-        <p>&copy;2018 Nolark - Créé par <a href="mailto:jose.gil@ac-nice.fr">José GIL</a>
-        <p>
-    </footer>
+    <?php
+    include_once('../includes/footer.html.inc.php');
+    ?>
 </body>
 
 </html>

@@ -534,10 +534,9 @@
             <img class="classement classement25" src="../images/casques/etoiles.gif" alt="Classement 2,5 sur 5">
         </article>
     </section>
-    <footer>
-        <p>&copy;2018 Nolark - Créé par <a href="mailto:jose.gil@ac-nice.fr">José GIL</a>
-        <p>
-    </footer>
+    <?php
+    include_once('../includes/footer.html.inc.php');
+    ?>
 </body>
 
 </html>

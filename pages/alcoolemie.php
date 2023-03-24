@@ -45,10 +45,9 @@
             <p id="controles"><input type="reset" name="rst_annuler" id="btn_annuler" value="Effacer les données"></p>
         </form>
     </section>
-    <footer>
-        <p>&copy;2018 Nolark - Créé par <a href="mailto:jose.gil@ac-nice.fr">José GIL</a>
-        <p>
-    </footer>
+    <?php
+    include_once('../includes/footer.html.inc.php');
+    ?>
 </body>
 
 </html>
