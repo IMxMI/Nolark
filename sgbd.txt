@@ -9,3 +9,29 @@ GRANT SELECT ON `nolark`.* TO 'nolarkuser'@'localhost';
 
 CREATE TABLE `nolark`.`marque` (`id` INT(3) NOT NULL , `nom` TEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;
 // creation de la table marque avec clé primaire ID[int] et attribut nom[string].
+
+
+CREATE TABLE marque (
+ id int(3) NOT NULL,
+ nom text NOT NULL,
+ CONSTRAINT pk_marque PRIMARY KEY (id)
+);
+CREATE TABLE type (
+ id int(3) NOT NULL,
+ libelle text NOT NULL,
+ CONSTRAINT pk_type PRIMARY KEY (id)
+);
+CREATE TABLE casque (
+ id int(5) NOT NULL,
+ marque int(3) NOT NULL,
+ modele text,
+ type int(3) NOT NULL,
+ prix float DEFAULT 0.0,
+ classement int(2) DEFAULT 0,
+ image text,
+ stock int(4),
+ CONSTRAINT pk_casque PRIMARY KEY (id),
+ CONSTRAINT fk_type FOREIGN KEY (type) REFERENCES type (id),
+ CONSTRAINT fk_marque FOREIGN KEY (marque) REFERENCES marque (id)
+);
+//création de tables et de relations
