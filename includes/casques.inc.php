@@ -20,25 +20,37 @@ while ($ligne = $res->fetch(PDO::FETCH_OBJ)) {
         echo '<article>';
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
+        echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
         echo '</article>';
     }
     elseif($pageActuelle === 'cross.php' and $ligne->libelle === 'cross') {
         echo '<article>';
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
+        echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
         echo '</article>';
     }
     elseif($pageActuelle === 'enfants.php' and $ligne->libelle === 'enfants') {
         echo '<article>';
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
+        echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
         echo '</article>';
     }
     elseif($pageActuelle === 'piste.php' and $ligne->libelle === 'piste') {
         echo '<article>';
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
+        echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
         echo '</article>';
     }
+    //<article>
+      //      <img src="../images/casques/cross/arai-vx3-frost-silver.jpg" alt="arai vx3 frost silver">
+        //    <p class="stockko"><abbr data-tip="Sur commande uniquement">stock</abbr></p>
+          //          echo '<p class="prix">',$ligne->prix,'</p>';
+            //<p class="marque">arai</p>
+        //    <p class="modele">vx3 frost silver</p>
+          //  <img class="classement classement20" src="../images/casques/etoiles.gif" alt="Classement 2 sur 5">
+        //</article>
 }
 echo '</section>';
