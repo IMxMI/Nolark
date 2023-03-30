@@ -9,3 +9,13 @@ $req .= ' INNER JOIN marque ON casque.marque=marque.id';
 
 //envoi de la requette au serveur.
 $res = $cnx->query($req);
+
+//affiche les images apres avoir parcourue les résultats.
+echo '<section id="casques">';
+while ($ligne = $res->fetch(PDO::FETCH_OBJ)) {
+ echo '<article>';
+ echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
+ '" alt="', $ligne->modele, '">';
+ echo '</article>';
+}
+echo '</section>';
