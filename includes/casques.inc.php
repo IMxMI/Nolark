@@ -21,6 +21,7 @@ while ($ligne = $res->fetch(PDO::FETCH_OBJ)) {
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
         echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
+        echo '<p class="prix">',$ligne->prix,'</p>';
         echo '</article>';
     }
     elseif($pageActuelle === 'cross.php' and $ligne->libelle === 'cross') {
@@ -28,6 +29,7 @@ while ($ligne = $res->fetch(PDO::FETCH_OBJ)) {
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
         echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
+        echo '<p class="prix">',$ligne->prix,'</p>';
         echo '</article>';
     }
     elseif($pageActuelle === 'enfants.php' and $ligne->libelle === 'enfants') {
@@ -35,6 +37,7 @@ while ($ligne = $res->fetch(PDO::FETCH_OBJ)) {
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
         echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
+        echo '<p class="prix">',$ligne->prix,'</p>';
         echo '</article>';
     }
     elseif($pageActuelle === 'piste.php' and $ligne->libelle === 'piste') {
@@ -42,6 +45,7 @@ while ($ligne = $res->fetch(PDO::FETCH_OBJ)) {
         echo '<img src="../images/casques/', $ligne->libelle, '/', $ligne->image,
         '" alt="', $ligne->modele, '">';
         echo '<p class="stockko"><abbr data-tip="',$ligne->stock,'">stock</abbr></p>';
+        echo '<p class="prix">',$ligne->prix,'</p>';
         echo '</article>';
     }
     //<article>
